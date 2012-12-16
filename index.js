@@ -83,8 +83,7 @@ module.exports = function(options) {
                 );
               } else if (type == "call") {
                 _tropo.call(
-                   say
-                  ,(parameters.callerID      || null)
+                   (parameters.to            || null)
                   ,(parameters.answerOnMedia || null)
                   ,(parameters.channel       || null)
                   ,(parameters.from          || null)
