@@ -1,6 +1,6 @@
 # simple-tropo
 
-API module for [Tropo](http://tropo.com) that makes sense.
+A more elegant and simplier way to access [Tropo](http://tropo.com) webapi using node.js and express.
 
 
 ## Installation
