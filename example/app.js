@@ -19,6 +19,7 @@ tropo.listener = function(res,tropo_obj){
   res.send(tropo_obj);
 }
 app.post('/',function(req,res,next){
+  console.log(req.body)
   tropo.send(req.body,function(){
     res.redirect("/")
   })

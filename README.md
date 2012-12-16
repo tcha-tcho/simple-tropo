@@ -1,6 +1,6 @@
 # simple-tropo
 
-A more elegant and simplier way to access [Tropo](http://tropo.com) webapi using node.js and express.
+A elegant and simpler way to access [Tropo](http://tropo.com) webapi using node.js and express.
 
 
 ## Installation
