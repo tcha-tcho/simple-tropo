@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Simple tests to simple-tropo</title>
+  <link rel="stylesheet" type="text/css" href="http://tropo.com/com.voxeo.fluffer.Fluffer/69883/css/tropo-all.css">
+  <style type="text/css">
+  #container {
+    background-color:white;
+    width:600px;
+    margin:0 auto;
+    padding:20px;
+    border-radius:20px;
+  }
+  form label {
+    margin-bottom:5px;
+    display:inline-block;
+    width:200px;
+    background:#f4f4f4;
+  }
+  form input {
+    width:300px;
+    margin-bottom:5px;
+    display:inline-block;
+  }
+  form .submit {
+    font-size:50px;
+  }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Simple tests for simple-tropo</h1>
+    <small>This is a simple testing build using <a href="http://github.com/tcha-tcho/simple-tropo">SIMPLE-TROPO</a></small>
+
+    <br><br><hr>
+    <h2>message</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="message"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>say           </label> <input type="text" name="say"          placeholder="required" ><br>
+      <label>to            </label> <input type="text" name="to"           placeholder="required" ><br>
+
+      <label>answerOnMedia </label> <input type="text" name="answerOnMedia"><br>
+      <label>channel       </label> <input type="text" name="channel"      ><br>
+      <label>from          </label> <input type="text" name="from"         ><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>network       </label> <input type="text" name="network"      ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>timeout       </label> <input type="text" name="timeout"      ><br>
+      <label>voice         </label> <input type="text" name="voice"        ><br>
+      <br><input class="submit" type="submit" value="Submit message">
+    </form>
+
+    <br><br><hr>
+    <h2>ask</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="ask"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>say           </label> <input type="text" name="say"          placeholder="required" ><br>
+
+      <label>choices       </label> <input type="text" name="choices"      ><br>
+      <label>attempts      </label> <input type="text" name="attempts"     ><br>
+      <label>bargein       </label> <input type="text" name="bargein"      ><br>
+      <label>minConfidence </label> <input type="text" name="minConfidence"><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>recognizer    </label> <input type="text" name="recognizer"   ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>timeout       </label> <input type="text" name="timeout"      ><br>
+      <label>voice         </label> <input type="text" name="voice"        ><br>
+      <br><input class="submit" type="submit" value="Submit ask">
+    </form>
+
+    <br><br><hr>
+    <h2>call</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="call"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>say           </label> <input type="text" name="say"          placeholder="required" ><br>
+      <label>to            </label> <input type="text" name="to"           placeholder="required" ><br>
+
+      <label>answerOnMedia </label> <input type="text" name="answerOnMedia"><br>
+      <label>channel       </label> <input type="text" name="channel"      ><br>
+      <label>from          </label> <input type="text" name="from"         ><br>
+      <label>headers       </label> <input type="text" name="headers"      ><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>network       </label> <input type="text" name="network"      ><br>
+      <label>recording     </label> <input type="text" name="recording"    ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>timeout       </label> <input type="text" name="timeout"      ><br>
+      <br><input class="submit" type="submit" value="Submit call">
+    </form>
+
+    <br><br><hr>
+    <h2>conference</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="conference"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>id            </label> <input type="text" name="id"           placeholder="required" ><br>
+
+      <label>mute          </label> <input type="text" name="mute"         ><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>playTones     </label> <input type="text" name="playTones"    ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>terminator    </label> <input type="text" name="terminator"   ><br>
+      <br><input class="submit" type="submit" value="Submit conference">
+    </form>
+
+    <br><br><hr>
+    <h2>record</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="record"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>say           </label> <input type="text" name="say"          placeholder="required" ><br>
+
+      <label>attempts      </label> <input type="text" name="attempts"     ><br>
+      <label>bargein       </label> <input type="text" name="bargein"      ><br>
+      <label>beep          </label> <input type="text" name="beep"         ><br>
+      <label>choices       </label> <input type="text" name="choices"      ><br>
+      <label>format        </label> <input type="text" name="format"       ><br>
+      <label>maxSilence    </label> <input type="text" name="maxSilence"   ><br>
+      <label>maxTime       </label> <input type="text" name="maxTime"      ><br>
+      <label>method        </label> <input type="text" name="method"       ><br>
+      <label>minConfidence </label> <input type="text" name="minConfidence"><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>timeout       </label> <input type="text" name="timeout"      ><br>
+      <label>transcription </label> <input type="text" name="transcription"><br>
+      <label>url           </label> <input type="text" name="url"          ><br>
+      <label>password      </label> <input type="text" name="password"     ><br>
+      <label>username      </label> <input type="text" name="username"     ><br>
+      <br><input class="submit" type="submit" value="Submit record">
+    </form>
+
+    <br><br><hr>
+    <h2>say</h2>
+    <form action="/" method="POST">
+      <input type="hidden" name="type"  value="say"><br>
+      <label>token         </label> <input type="text" name="token"        placeholder="required" ><br>
+      <label>value         </label> <input type="text" name="say"          placeholder="required" ><br>
+
+      <label>as            </label> <input type="text" name="as"           ><br>
+      <label>name          </label> <input type="text" name="name"         ><br>
+      <label>required      </label> <input type="text" name="required"     ><br>
+      <label>voice         </label> <input type="text" name="voice"        ><br>
+      <br><input class="submit" type="submit" value="Submit say">
+    </form>
+
+  </div>
+</body>
+</html>
