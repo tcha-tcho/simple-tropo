@@ -55,7 +55,6 @@ module.exports = function(options) {
             if(parameters) {
               var say = parameters.say?new Say(parameters.say):null;
               var type = (parameters.type || "message")
-              _tropo.say(say);
               if (type == "message") {
                 _tropo.message(
                    say
@@ -165,6 +164,7 @@ module.exports = function(options) {
               // tropo.on("continue", null, "/call", true);
               // tropo.on("hangup", null, "/call", true);
               _tropo.type = type;
+              _tropo.say(say);
               var tropo_obj = JSON.parse(tropowebapi.TropoJSON(_tropo));
               tropo_obj["tropo"] = [tropo_obj["tropo"][0]]; //Duplicating messages
               self.listener(res,tropo_obj)
