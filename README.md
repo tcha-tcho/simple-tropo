@@ -16,7 +16,7 @@ A elegant and simpler way to access [Tropo](http://tropo.com) webapi using node.
 3 - Add a Canadian phone number (internationals SMSs)
 4 - Contact support@tropo.com for grant international Voice and SMS permissions
 
-[configuration sample](http://f.tmts.co.s3.amazonaws.com/images/tropo_conf_sample.png)
+![configuration sample](http://f.tmts.co.s3.amazonaws.com/images/tropo_conf_sample.png)
 
 
 ## Usage
