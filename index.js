@@ -55,6 +55,7 @@ module.exports = function(options) {
             if(parameters) {
               var say = parameters.say?new Say(parameters.say):null;
               var type = (parameters.type || "message")
+              _tropo.say(say);
               if (type == "message") {
                 _tropo.message(
                    say
