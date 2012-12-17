@@ -16,7 +16,7 @@ app.get('/',function(req,res,next){
 
 tropo.listener = function(res,tropo_obj){
   //intercepting listener to create interactive app
-  cosnole.log(tropo_obj)
+  console.log(tropo_obj)
   res.send(tropo_obj);
 }
 app.post('/',function(req,res,next){
