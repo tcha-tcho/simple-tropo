@@ -12,9 +12,13 @@ A elegant and simpler way to access [Tropo](http://tropo.com) webapi using node.
 ## Requirements
 
 1 - You gonna have to create a account on tropo [here](https://www.tropo.com/account/register.jsp).
+
 2 - Create a application as showed on image below.
+
 3 - Add a Canadian phone number (internationals SMSs)
+
 4 - Contact support@tropo.com for grant international Voice and SMS permissions
+
 
 ![configuration sample](http://f.tmts.co.s3.amazonaws.com/images/tropo_conf_sample.png)
 
