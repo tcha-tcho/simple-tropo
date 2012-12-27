@@ -166,7 +166,7 @@ module.exports = function(options) {
               _tropo.type = type;
               // _tropo.value.say(say);
               var tropo_obj = JSON.parse(tropowebapi.TropoJSON(_tropo));
-              tropo_obj["tropo"] = [tropo_obj["tropo"][0]]; //Duplicating messages
+              tropo_obj["tropo"] = [tropo_obj["tropo"][tropo_obj["tropo"].length - 1]]; //Duplicating messages
               self.listener(res,tropo_obj)
             } else {
               res.send(200);

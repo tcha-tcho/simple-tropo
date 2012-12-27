@@ -5,7 +5,7 @@
   ],
   "name": "simple-tropo",
   "description": "tropo.com API that makes sense",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/tcha-tcho/simple-tropo.git"
